@@ -4,16 +4,18 @@ Biometric EVM using Arduino and fingerprint sensor for secure, real-time voter a
 We have designed an advanced system using a fingerprint module and arduino. In this biometric based voting machine, a person has to register a fingerprint ID with the system which will be centrally stored in Arduino. During the election process a person should place a finger, if the fingerprint matches with pre-stored information then the person is allowed to cast a vote. Else it will display Unauthorized voter.. For confirmation of voters, the confirmation message will be displayed on LCD regarding the  voting. If a voter has already voted then it displays the message of “already voted”.So in this way fake voting can be prevented. After the voting process is completed, results can be viewed by pressing the result button and the winner will be declared. It has a simple and  easily accessible hardware design
 # Step-by-Step Breakdown:
  1. Start
+    
  ● Activity: "Voter"
+ 
  ● Description: The process begins when a voter initiates the voting procedure.
- 2. Authentication
+ 3. Authentication
  ● Activity: Voter chooses between fingerprint authentication or password ID for 
 authentication.
  ● Description: The voter decides on the method of authentication.
- Option 1: Fingerprint Authentication
- 1. Enable fingerprint module for authentication.
- 2. Description: The system activates the fingerprint reader.
- 3. Compare the voter's fingerprint with the fingerprint database.
+        Option 1: Fingerprint Authentication
+            1. Enable fingerprint module for authentication.
+            2. Description: The system activates the fingerprint reader.
+            3. Compare the voter's fingerprint with the fingerprint database.
  Outcome:
  ■ Match: Proceed to step 8.
  ■ No Match: Display "unknown message" with a beep alarm.
